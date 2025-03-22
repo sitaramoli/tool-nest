@@ -198,7 +198,7 @@ const ImageCompressor: React.FC = () => {
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <div className="mb-6">
                 <h2 className="font-medium text-gray-900 mb-5">
-                  Image: {originalImage.name}
+                  {originalImage.name}
                 </h2>
                 <hr className="mb-5" />
                 <div className="flex flex-row justify-between text-gray-600">
@@ -223,7 +223,7 @@ const ImageCompressor: React.FC = () => {
                     handleCompressionQualityChange(value)
                   }
                 />
-                <Button className="mt-6 w-full" onClick={handleDownload}>
+                <Button className="mt-6" onClick={handleDownload}>
                   Download
                 </Button>
               </div>
